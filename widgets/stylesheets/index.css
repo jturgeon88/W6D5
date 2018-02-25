@@ -19,6 +19,10 @@ span, article, footer, time, small {
   list-style: none;
 }
 
+body {
+  display: flex;
+  justify-content: space-around;
+}
 
 h1 {
   font-family: 'Mukta Mahee', sans-serif;
@@ -41,3 +45,88 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+/*Tabs*/
+
+.tab-header {
+  width: 200px;
+  height: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-header > li {
+  width: 65px;
+  border-top: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 4px;
+  cursor: pointer;
+  background-color: lightblue; 
+
+}
+
+.tab-header > li:hover {
+  background-color: black;
+  color: white;
+}
+
+.tab-header > li:first-child {
+  border-left: 2px solid black;
+}
+
+.tab-header > li:last-child {
+  border-right: 2px solid black;
+}
+
+.tab-header > li.active {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.tabs {
+  width: 240px;
+  height: 200px;
+}
+
+.tab-content {
+  font-weight: bold;
+  color: white;
+  height: 192px;
+  margin: 0 20px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://hd.unsplash.com/photo-1445112098124-3e76dd67983c);
+  background-size: cover;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.tab-content article {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
