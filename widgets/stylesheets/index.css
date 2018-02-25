@@ -1,0 +1,43 @@
+/* AutoComplete */
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+
+h1 {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 700;
+}
+
+.clock {
+  font-family: 'Arvo', serif;
+  background: orange;
+  width: 550px;
+  position: center;
+  font-size: 28px;
+  color: white;
+  border: 2px solid #777;
+  padding: 10px 20px;
+  margin: 0 20px 20px 20px;
+}
+
+.clock p {
+  display: flex;
+  justify-content: space-between;
+}
