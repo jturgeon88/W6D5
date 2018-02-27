@@ -1,4 +1,30 @@
+#root {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.row {
+  width: 250px;
+  margin: 0 auto;
+
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 .tile {
   height: 20px;
@@ -22,3 +48,51 @@
 .flagged, .bombed {
   color: red;
 }
+
+.modal-screen {
+  z-index: 998;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-content {
+  z-index: 999;
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 400px;
+  height: 240px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-content p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.modal-content button {
+  position: relative;
+  font-size: 20px;
+  background-color: rgb(97, 218, 251);
+  font-weight: bold;
+  padding: 20px;
+  border: 2px transparent black;
+  border-radius: 10px;
+  box-shadow: 4px 2px black;
+}
+
+
+
+
+
+
+
+
