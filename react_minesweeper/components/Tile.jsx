@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Tile extends React.Component {
+class Tile extends React.Component {
   constructor (props) {
     super(props);
 
@@ -15,3 +15,5 @@ export class Tile extends React.Component {
     )
   } 
 }
+
+export default Tile;
