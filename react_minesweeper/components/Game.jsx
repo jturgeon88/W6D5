@@ -13,15 +13,30 @@ class Game extends React.Component {
       this.updateGame = this.updateGame.bind(this);
     }
 
-    updateGame (){
-      // we'll come back to this after we have a properly rendering board
+    updateGame (tile, flagged) {
+      if (flagged) {
+        tile.toggleFlag();
+      } else {
+        tile.explore();
+      }
+
+      this.setState({
+        board: this.state.board
+      });
+
+
     }
 
     render () {
-      //Then, write a render method. Have it return a new React component, Board, passing in this.state.board and this.updateGame as props. 
+      let modal;
+      if (this.state.board.lost() || this.state.board.won()) {
+        const text = this.state.board.won() ? "You won!" : "You lost, loserrr!";
+        modal = <p>{text}</p>;
+      } 
 
       return (
         <div>
+        {modal}
           <Board board={this.state.board} updateGame={this.updateGame} />
         </div>
       )
